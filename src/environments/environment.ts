@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig:{
+    apiKey: "AIzaSyBnXCCV6VS-HtxHhFRLlkPuNAzuIsV-IYU",
+    authDomain: "casadigitallaufap.firebaseapp.com",
+    databaseURL: "https://casadigitallaufap.firebaseio.com",
+    projectId: "casadigitallaufap",
+    storageBucket: "casadigitallaufap.appspot.com",
+    messagingSenderId: "75960781003"}
+   
 };
 
 /*
