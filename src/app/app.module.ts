@@ -18,8 +18,8 @@ import { environment} from '../environments/environment';
 import { AuthService } from './servicios/auth.service';
 
 import { AuthGuard } from './guards/auth.guard';
-
-
+import { FlashMessagesModule } from 'angular2-flash-messages';
+import { FlashMessagesService } from 'angular2-flash-messages';
 
 import { from } from 'rxjs';
 
@@ -32,15 +32,17 @@ import { from } from 'rxjs';
     LoginPageComponent,
     PrivadoComponent,
     NotFaundPageComponent
-  ],
-  imports: [
+  ],//se importan modulos
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-  ],
-  providers: [AuthService, AuthGuard],
+    FlashMessagesModule,
+
+  ],//se importan los servicios
+  providers: [AuthService, AuthGuard, FlashMessagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
