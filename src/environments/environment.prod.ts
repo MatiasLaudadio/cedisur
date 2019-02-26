@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  timestampsInSnapshots: true,
   firebaseConfig:{
     apiKey: "AIzaSyBnXCCV6VS-HtxHhFRLlkPuNAzuIsV-IYU",
     authDomain: "casadigitallaufap.firebaseapp.com",

@@ -6,6 +6,7 @@ import { RegisterPageComponent } from './componentes/register-page/register-page
 import { PrivadoComponent } from './componentes/privado/privado.component';
 import { NotFaundPageComponent } from './componentes/not-faund-page/not-faund-page.component';
 import { AuthGuard } from './guards/auth.guard';  
+import { AddActualizacionComponent } from './componentes/add-actualizacion/add-actualizacion.component';
 import { from } from 'rxjs';
 
 const routes: Routes = [
@@ -13,7 +14,9 @@ const routes: Routes = [
   {path:'login', component:LoginPageComponent},
   {path:'register', component:RegisterPageComponent},
   {path:'privado',component:PrivadoComponent, canActivate:[AuthGuard]},
-  {path:'**',component:NotFaundPageComponent}
+  {path:'actualizacion', component:AddActualizacionComponent},
+  {path:'**',component:NotFaundPageComponent},
+  
 ];
 
 @NgModule({
